@@ -76,7 +76,6 @@ def on_click(x, y, button, pressed):
 			print("Saving: " + str(x1), str(y1), str(x2), str(y2))
 			im = ImageGrab.grab(bbox=(x1,y1,x2,y2)) # Makes screenshot
 			now = datetime.now().strftime("%Y-%m-%d %H-%M-%S") # Makes date thingy
-			print("Stringlifly")
 			im.save(dirname + str(now) + ".png") # Saves screenshot
 			print("Image Saved to: " + dirname)
 			return False

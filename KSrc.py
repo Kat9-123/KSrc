@@ -53,7 +53,6 @@ def Screenshot(systray):
 				root.attributes("-fullscreen", False)
 			else:
 				if xa == xs or ya == ys:
-					root.destroy()
 					return
 				Pressed = False
 				root.destroy()
